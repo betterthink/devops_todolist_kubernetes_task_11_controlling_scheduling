@@ -78,15 +78,15 @@ spec:
                     operator: In
                     values:
                     - "mysql"
-        podeAntiAffinity:
+        podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
-              labelSelector:
-                - matchExpressions:
+              - labelSelector:
+                  matchExpressions:
                     - key: "app"
                       operator: In
                       values:
                       - "mysql"
-                  topologyKey: "kubernetes.io/hostname"
+                topologyKey: "kubernetes.io/hostname"
   volumeClaimTemplates:
   - metadata:
       name: data

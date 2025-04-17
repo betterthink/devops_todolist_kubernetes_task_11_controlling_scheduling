@@ -2,12 +2,12 @@
 ## Validating labels
 To validate labels run this command:
 ```bash
-kubectl get nodes --show-labesl
+kubectl get nodes --show-labels
 ```
 ## Validating affinity rules
 ```bash
-kubectl get podes -n todoapp -o wide
+kubectl get pods -n todoapp -o wide
 ```
 ```bash
-kubectl get podes -n mysql -o wide
+kubectl get pods -n mysql -o wide
 ```
